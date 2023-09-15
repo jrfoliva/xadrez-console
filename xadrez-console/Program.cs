@@ -9,13 +9,15 @@ namespace xadrez_console
     {
         static void Main(string[] args)
         {
-            //Testando posição conforme o tabuleiro real de xadrez
+
+            /*
+            Testando posição conforme o tabuleiro real de xadrez
             PosicaoXadrez pos = new PosicaoXadrez('a', 1);
             Console.WriteLine(pos);
             Console.WriteLine(pos.toPosicao());
             Console.ReadLine();
+            */
 
-            /*
             try
             {
                 Tabuleiro tab = new Tabuleiro(8, 8);
@@ -24,14 +26,16 @@ namespace xadrez_console
                 tab.colocarPeca(new Torre(Cor.Preta, tab), new Posicao(1, 3));
                 tab.colocarPeca(new Rei(Cor.Preta, tab), new Posicao(0, 2));
 
+                tab.colocarPeca(new Torre(Cor.Branca, tab), new Posicao(3, 5));
+
                 Tela.imprimirTabuleiro(tab);
                 Console.ReadLine();
             }
-            catch (TabuleiroException e) 
+            catch (TabuleiroException e)
             {
                 Console.WriteLine(e.Message);
             }
-            */
+
         }
     }
 }
