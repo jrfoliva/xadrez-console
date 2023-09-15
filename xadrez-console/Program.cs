@@ -1,6 +1,7 @@
 ﻿using System;
 using tabuleiro;
 using xadrez;
+using xadrez_console.xadrez;
 
 namespace xadrez_console
 {
@@ -8,6 +9,13 @@ namespace xadrez_console
     {
         static void Main(string[] args)
         {
+            //Testando posição conforme o tabuleiro real de xadrez
+            PosicaoXadrez pos = new PosicaoXadrez('a', 1);
+            Console.WriteLine(pos);
+            Console.WriteLine(pos.toPosicao());
+            Console.ReadLine();
+
+            /*
             try
             {
                 Tabuleiro tab = new Tabuleiro(8, 8);
@@ -23,6 +31,7 @@ namespace xadrez_console
             {
                 Console.WriteLine(e.Message);
             }
+            */
         }
     }
 }
