@@ -9,7 +9,7 @@ namespace xadrez_console
     {
         public static void imprimirTabuleiro(Tabuleiro tab)
         {
-
+            Console.Write("  a b c d e f g h\n");
             for (int i = 0; i < tab.linhas; i++)
             {
                 Console.Write(8 - i + " ");
@@ -26,7 +26,8 @@ namespace xadrez_console
         {
             ConsoleColor fundoOriginal = Console.BackgroundColor;
             ConsoleColor fundoAlterado = ConsoleColor.DarkGray;
-            
+
+            Console.Write("  a b c d e f g h\n");
             for (int i = 0; i < tab.linhas; i++)
             {
                 Console.Write(8 - i + " ");
